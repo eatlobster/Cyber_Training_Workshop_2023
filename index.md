@@ -6,13 +6,12 @@ country: "United States"      # lowercase two-letter ISO country code such as "f
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 latitude: "43.002890"     # decimal latitude of workshop venue (use https://www.latlong.net/)
 longitude: "-78.788780"    # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "July 3-15, 2022"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humandate: "June 11-21, 2023"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "9:00 am - 5:00 pm EDT"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: 2022-07-03      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: 2022-07-15        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Alexey Akimov", "Seung Kyu Min", "Peihong Zhang", "Sebastian Mai", "Davide Avagliano",
-             "Luis Rego", "Lea-Maria Ibele", "Jin Zhao", "Weibin Chu", "Qijing Zheng", "Dmitri Kilin" ]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Mohammad Shakiba", "Dae Ho Han", "Matthew Dutra" ] # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+startdate: 2023-06-11      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2023-06-21        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Alexey Akimov" ]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: [ "Qingxin Zhang", "Mohammad Shakiba" ] # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["alexeyak@buffalo.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:         # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 googleform: https://forms.gle/kup1bkWibLsHH8Bn7
@@ -26,7 +25,7 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 {% endcomment %}
 
 
-# Excited States and Nonadiabatic Dynamics CyberTraining Workshop 2022
+# Excited States and Nonadiabatic Dynamics CyberTraining Workshop 2023
 
 ## About the Summer School and Workshop
 
@@ -65,20 +64,8 @@ The school aims to provide training in a range of advanced tools for excited sta
 nonadiabatic molecular dynamics calculations. 
 This year, the focus will be on the following packages:
 
-- pyUNIxMD (Min)
-- CT-MQC (Ibele)
-- SHARC (Mai)
-- SHARC/COBRAMM (Avagliano)
-- OpenMolcas (Mai, Avagliano)
-- ORCA (Mai)
-- Hefei-NAMD (Zhao, Chu)
-- Quantum Espresso (Zhao, Chu)
-- BerkeleyGW and paratec (Zhang)
-- DynEMol  (Rego)
 - Libra (Akimov)
-- DFTB+ (Shakiba)
-- CP2K (Shakiba)
-- TBD (Kilin)
+- TBD (TBD)
 
 The school will leverage the [OnDemand](https://ondemand.ccr.buffalo.edu) gateway at the University at Buffalo
 
@@ -358,10 +345,10 @@ The details may vary and the order of topics may be changed, the topics may be o
 
 
 ### Important dates
-   * Workshop application materials are due 5 pm EDT, June 10, 2022
-   * Students and Postdocs will be notified of their admission by June 15, 2022
-   * Workshop starts: 9 am EDT, July 3, 2022
-   * Workshop ends: 5 pm EDT, June 15, 2022
+   * Workshop application materials are due 5 pm EDT, May 1, 2023
+   * Students and Postdocs will be notified of their admission by May 11, 2023
+   * Workshop starts: 9 am EDT, June 11, 2023
+   * Workshop ends: 5 pm EDT, June 21, 2023
 
 
 ### Who can apply
@@ -377,8 +364,6 @@ tools and expand their knowledge in the areas of excited states and nonadiabatic
 are also welcome to participate.
 
 
-
-
 ### Selection and restrictions
 
 * **Competitive selection** The applicants will be selected based on the strength of their statement of purpose, as well as the adequate 
@@ -386,13 +371,7 @@ are also welcome to participate.
   What is more important is how ready the applicants are to absorb the new knowlege, how efficiently they can operate during the workshop, 
   and how critical the use of the methods/tools covered in the workshop may be for your future research or career (e.g. educating others). 
 
-* **Capacity.** This year, the event will take place in a hybrid format. We will accommodate 15-20 in-person participants (excluding instructors).
-  There is no limit to the capacity of the participants wishing to attend remotely, however the remote users who wish to utilize our CyberInfrastructure 
-  have to use VPN to remotely access the cluster. There is a limit on how many VPNs the UBIT department can provide. Furthermore, participants 
-  from certain countries with the export control limitations (e.g. China, Iran, Russia, etc.) can not be issued the UB VPN. The participants 
-  from such countries can not use the UB CCR cyberinftrastructure during the hands-on activities. Such participants may still be 
-  admitted to the theory talks/demo sessions. 
-
+* **Capacity.** This year, the event will take place in the in-person format. We will accommodate 15+ in-person participants (excluding instructors).  
 
 ### Acknowledgement
 

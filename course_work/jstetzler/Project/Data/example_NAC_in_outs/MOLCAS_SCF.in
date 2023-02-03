@@ -1,6 +1,0 @@
-&GATEWAY
-Coord=CO_eq.xyz
-Group=nosym
-Basis=ANO-R3
-&SEWARD
-&SCF

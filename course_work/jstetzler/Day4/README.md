@@ -1,1 +1,0 @@
-The results from the OpenMolcas and SHARC exercises are in the respective directories. For SHARC, I just provided the end trajectory files which contain all the relevant outputs from those calculations.
