@@ -10,8 +10,8 @@ humandate: "June 11-21, 2023"    # human-readable dates for the workshop (e.g., 
 humantime: "9:00 am - 5:00 pm EDT"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2023-06-11      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2023-06-21        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Alexey Akimov" ]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: [ "Qingxin Zhang", "Mohammad Shakiba" ] # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Alexey Akimov", "Graham Worth", "Niri Govind", "Michael Filatov" ]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: [ "Qingxin Zhang", "Mohammad Shakiba", "Konstantin Komarov" ] # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["alexeyak@buffalo.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:         # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 googleform: https://forms.gle/kup1bkWibLsHH8Bn7
@@ -52,7 +52,6 @@ Keywords and topics:
 - charge transfer
 - excitation energy transfer
 - trajectory surface hopping
-- coupled trajectories
 - exact factorization
 - TD-DFT, CASSCF, GW/BSE
 - algorithms and methods
@@ -65,7 +64,9 @@ nonadiabatic molecular dynamics calculations.
 This year, the focus will be on the following packages:
 
 - Libra (Akimov)
-- TBD (TBD)
+- Quantics (Worth)
+- NWChem (Govind)
+- GAMESS (Filatov)
 
 The school will leverage the [OnDemand](https://ondemand.ccr.buffalo.edu) gateway at the University at Buffalo
 
@@ -74,7 +75,7 @@ The school will leverage the [OnDemand](https://ondemand.ccr.buffalo.edu) gatewa
 
 {% if page.humandate %}
 <p id="when">
-  <strong>When:</strong>
+  <strong>When:</strong>             
   {{page.humandate}}.
   {% include workshop_calendar.html %}
 </p>
@@ -130,7 +131,7 @@ The details may vary and the order of topics may be changed, the topics may be o
   </tr>
 
   <tr>
-    <td class="col-md-3">July 3, 2022 (Day 1), Sunday</td>
+    <td class="col-md-3">June 11, 2023 (Day 1), Sunday</td>
     <td class="col-md-7">
       <ul>        
         <li>Arrivals</li>
@@ -142,180 +143,136 @@ The details may vary and the order of topics may be changed, the topics may be o
 
   
   <tr>
-    <td class="col-md-3">July 4, 2022 (Day 2), <strong>Monday</strong></td>
+    <td class="col-md-3">June 12, 2023 (Day 2), <strong>Monday</strong></td>
     <td class="col-md-7">
       <ul>
         <strong>Morning, 9 am - noon</strong>        
-        <li><a href="/_episodes/01-introduction">Introduction. Overview of the CCR CyberInfrastructure and auxiliary Software (30 min)</a></li>
-        <li><a href="/_episodes/02-python-git">Working with Git and GitHub. Python/Jupyter. Best practices. Theory and Hands on (90 min)</a> </li>
+        <li><a href="/_episodes/01-introduction">Introduction. Overview of the CCR CyberInfrastructure and auxiliary software (30 min)</a></li>
+        <li><a href="/_episodes/02-python-git">Working with Git and GitHub. Theory and Hands on (90 min)</a> </li>
         <li><a href="/_episodes/03-libra">General overview of Libra. Demos on various auxiliary capabilities and simple hands ons (60 min)</a></li>
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
-        <li><a href="/_episodes/03-libra">Quantum Trajectories with Adaptive Gaussians (QTAG). Lecture (30 min)</a></li>
-        <li><a href="/_episodes/03-libra">Quantum Trajectories with Adaptive Gaussians (QTAG). Demo and Hands on (30 min)</a></li>
-        <li><a href="/_episodes/03-libra">Machine learning capabilities of Libra: Lecture, Demo, and Hands on  (60 min)</a></li>
-        <li><a href="/_episodes/03-libra">HEOM and DVR in Libra. Lecture, Demo, and Hands on (90 min)</a></li>
+        <li><a href="/_episodes/03-libra">Theory of adiabatic and nonadiabatic dynamics. Lecture (90 min)</a></li>
+        <li><a href="/_episodes/03-libra">TSH and Ehrenfest dynamics with model Hamiltonians in Libra. Hands on (90 min)</a></li>
+        <li><a href="/_episodes/03-libra">HEOM and QTAG in Libra. (30 min)</a></li>
       </ul>
     </td> 
-    <td class="col-md-2">Alexey Akimov, Matthew Dutra</td>
+    <td class="col-md-2">Alexey Akimov, Qingxin Zhang, Mohammad Shakiba</td>
   </tr>
 
   <tr>
-    <td class="col-md-3">July 5, 2022 (Day 3), Tuesday</td>
+    <td class="col-md-3">June 13, 2023 (Day 3), Tuesday</td>
     <td class="col-md-7">
       <ul>
         <strong>Morning, 9 am - noon</strong>        
-        <li><a href="/_episodes/03-libra">Theory of adiabatic and nonadiabatic dynamics. Lecture (90 min)</a></li>
-        <li><a href="/_episodes/03-libra">TSH and Ehrenfest dynamics with model Hamiltonians in Libra. Hands on (90 min)</a></li>
+        <li><a href="/_episodes/03-libra">Machine learning capabilities of Libra: Lecture, Demo, and Hands on  (60 min)</a></li>
+        <li><a href="/_episodes/03-libra">DVR in Libra. Lecture, Demo, and Hands on (90 min)</a></li>
+        <li><a href="/_episodes/03-libra">TBD (30 min)</a></li>
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
         <li><a href="/_episodes/03-libra">NA-MD in finite and condensed matter systems with xTB and TD-DFT with Libra/CP2k code. Lecture and Hands on</a></li>
       </ul>
     </td>
-    <td class="col-md-2">Alexey Akimov, Mohammad Shakiba</td>
+    <td class="col-md-2">Alexey Akimov, Qingxin Zhang, Mohammad Shakiba</td>
   </tr>
 
   <tr>
-    <td class="col-md-3">July 6, 2022 (Day 4), Wednesday</td>
+    <td class="col-md-3">June 14, 2023 (Day 4), Wednesday</td>
     <td class="col-md-7">
       <ul>
         <strong>Morning, 9 am - noon</strong>        
-        <li><a href="/_episodes/08-dynemol">MM and non-adiabatic trajectory methods (Ehrenfest, FSSH, CSDM). Theory (90 min)</a></li>
-        <li><a href="/_episodes/08-dynemol">DynEMol code. Hands on (90 min)</a></li>
+        <li><a href="/_episodes/04-quantics">Theory and hands on with Quantics and MCTDH</a></li>
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
-        <li><a href="/_episodes/08-dynemol">DynEMol Q and A and students projects (60 min)</a></li>
-        <li><a href="/_episodes/07-cobramm">QM/MM for excited states. Theory (75 min)</a></li>
-        <li><a href="/_episodes/07-cobramm">COBRAMM/Amber. Hands on (75 min)</a></li>
+        <li><a href="/_episodes/04-quantics">Theory and hands on with Quantics and MCTDH</a></li>
       </ul>
     </td>
-    <td class="col-md-2">Luis Rego, Davide Avagliano</td>
+    <td class="col-md-2">Graham Worth</td>
   </tr>
 
   <tr>
-    <td class="col-md-3">July 7, 2022 (Day 5), Thursday</td>
+    <td class="col-md-3">June 15, 2023 (Day 5), Thursday</td>
     <td class="col-md-7">
       <ul>
         <strong>Morning, 9 am - noon</strong>        
-        <li><a href="/_episodes/07-cobramm">COBRAMM/Amber. Hands on (60 min)</a></li>
-        <li><a href="/_episodes/04-molcas">Excited states calculations with CASSCF. Theory (60 min)</a></li>
-        <li><a href="/_episodes/04-molcas">CASSCF with OpenMolcas. Hands on (60 min)</a></li>
+        <li><a href="/_episodes/04-quantics">Theory and hands on with Quantics and MCTDH</a></li>
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
-        <li><a href="/_episodes/06-sharc">From FSSH to SHARC, practical aspects. Theory (60 min)</a></li>
-        <li><a href="/_episodes/06-sharc">SHARC with CASSCF. Hands on (90 min)</a></li>
+        <li><a href="/_episodes/04-quantics">Theory and hands on with Quantics and MCTDH</a></li>
       </ul>
     </td>
-    <td class="col-md-2">Sebastian Mai, Davide Avagliano</td>
+    <td class="col-md-2">Graham Worth</td>
   </tr>
 
   <tr>
-    <td class="col-md-3">July 8, 2022 (Day 6), Friday</td>
+    <td class="col-md-3">June 16, 2023 (Day 6), Friday</td>
     <td class="col-md-7">
       <ul>
         <strong>Morning, 9 am - noon</strong>        
-        <li><a href="/_episodes/05-orca">Excited states with TDDFT (in ORCA) and LVC model potentials. Theory (60 min)</a></li>
-        <li><a href="/_episodes/06-sharc">SHARC with LVC: Preparing parameters from TDDFT and running a swarm of LVC trajectories. Hands on (120 min)</a></li>
+        <li><a href="/_episodes/05-gamess">Theory and hands on with GAMESS</a></li>
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
-        <li><a href="/_episodes/06-sharc">Trajectory analysis with SHARC. Theory (60 min)</a></li>
-        <li><a href="/_episodes/06-sharc">Trajectory analysis with SHARC. Hands on (60 min)</a></li>
-        <li><a href="/_episodes/07-cobramm">SHARC with COMRAMM. Hands on (90 min)</a></li>
-        
+        <li><a href="/_episodes/05-gamess">Theory and hands on with GAMESS</a></li>        
       </ul>
     </td>
-    <td class="col-md-2">Sebastian Mai, Davide Avagliano </td>
+    <td class="col-md-2">Michael Filatov, Konstantin Komarov</td>
   </tr>
   
   <tr>
-    <td class="col-md-3">July 9, 2022 (Day 7), Saturday</td>
+    <td class="col-md-3">June 17, 2023 (Day 7), Saturday</td>
     <td class="col-md-7">On your own. Projects time</td>
     <td class="col-md-2"></td>
   </tr>
 
   <tr>
-    <td class="col-md-3">July 10, 2022 (Day 8), Sunday</td>
+    <td class="col-md-3">June 18, 2023 (Day 8), Sunday</td>
     <td class="col-md-7">On your own. Projects time</td>
     <td class="col-md-2"></td>
   </tr>
 
   <tr>
-    <td class="col-md-3">July 11, 2022 (Day 9), <strong>Monday</strong></td>
+    <td class="col-md-3">June 19, 2023 (Day 9), <strong>Monday</strong></td>
     <td class="col-md-7">
       <ul>
         <strong>Morning, 9 am - noon</strong>        
-        <li><a href="/_episodes/09-pyunixmd">Theory of exact-factorization based TSH</a></li>
-        <li><a href="/_episodes/09-pyunixmd">SHXF + alhpa</a></li>
+        <li><a href="/_episodes/05-gamess">Theory and hands on with GAMESS</a></li>
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
-        <li><a href="/_episodes/09-pyunixmd">Demo and hands on with pyUNIxMD + DFTB</a></li>
-        <li><a href="/_episodes/09-pyunixmd">Interfacing pyUNIxMD with external packages</a></li>
+        <li><a href="/_episodes/05-gamess">Theory and hands on with GAMESS</a></li>
       </ul>
     </td>
-    <td class="col-md-2">Seung Kyu Min, Dae Ho Han</td>
+    <td class="col-md-2">Michael Filatov, Konstantin Komarov</td>
   </tr>
 
   <tr>
-    <td class="col-md-3">July 12, 2022 (Day 10), Tuesday</td>
+    <td class="col-md-3">June 20, 2023 (Day 10), Tuesday</td>
     <td class="col-md-7">
       <ul>
         <strong>Morning, 9 am - noon</strong>        
-        <li><a href="/_episodes/10-ctmqc">Introduction to the Exact Factorization quantities. Lecture (50 min)</a></li>
-        <li><a href="/_episodes/10-ctmqc">Trajectory based algorithms from EF. Lecture (50 min)</a></li>
-        <li><a href="/_episodes/10-ctmqc">CT-MQC and CT-TSH (50 min)</a></li>
+        <li><a href="/_episodes/06-nwchem">Theory and hands on with NWChem</a></li>
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
-        <li><a href="/_episodes/10-ctmqc">hands on with model systems. Observing and understanding time dependent potentials and trajectories within the EF picture with the G-CTMQC code</a></li>
+        <li><a href="/_episodes/06-nwchem">Theory and hands on with NWChem</a></li>
       </ul>
     </td>
-    <td class="col-md-2">Lea-Maria Ibele </td>
+    <td class="col-md-2">Niri Govind</td>
   </tr>
 
   <tr>
-    <td class="col-md-3">July 13, 2022 (Day 11), Wednesday</td>
+    <td class="col-md-3">June 21, 2023 (Day 11), Wednesday</td>
     <td class="col-md-7">
       <ul>
-        <li><a href="/_episodes/11-berkeleygw">Excited state calculations in condesned-matter systems with BerkeleyGW and paratec codes</a></li>
-        <li><a href="/_episodes/12-paratec">Excited state calculations in condesned-matter systems with BerkeleyGW and paratec codes</a></li>
+        <li><a href="/_episodes/06-nwchem">Theory and hands on with NWChem</a></li>
       </ul>
     </td>
-    <td class="col-md-2">Peihong Zhang</td>
+    <td class="col-md-2">Niri Govind</td>
   </tr>
 
   <tr>
-    <td class="col-md-3">July 14, 2022 (Day 12), Thursday</td>
-    <td class="col-md-7">
-      <ul>
-        <strong>Morning, 9 am - noon</strong>        
-        <li><a href="/_episodes/13-hefeinamd">Nonadiabatic dynamics using Hefei-NA-MD code. Lectures and Demos</a></li>        
-        <li><a href="/_episodes/13-hefeinamd">Nonadiabatic dynamics using Hefei-NA-MD code. Hands on</a></li>        
-        <strong>Noon - 1:30 pm</strong> Lunch break
-        <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
-        <li><a href="/_episodes/13-hefeinamd">Nonadiabatic dynamics using Hefei-NA-MD code. Hands on</a></li>        
-        <li><a href="/_episodes/03-libra">NA-MD calculations in condensed matter systems with Libra/QE/eQE codes.(60 min)</a></li>
-        <li><a href="/_episodes/03-libra">NA-MD with ML in Libra. Theory. Hands on (30 min)</a></li>
-      </ul>
-    </td>
-    <td class="col-md-2">Jin Zhao, Weibin Wang, Qijing Zheng, Mohammad Shakiba, and Alexey Akimov</td>
-  </tr>
-
-  <tr>
-    <td class="col-md-3">July 15, 2022 (Day 13), Friday</td>
-    <td class="col-md-7">
-      <ul>
-        <li><a href="/_episodes/14-redfield"></a>Nonadiabatic dynamics calculations in extended systems with KS-TD-DFT NA-MD method</li>
-        <li>Closing dinner.</li>
-      </ul>
-    </td>
-    <td class="col-md-2">Dmitrii Kilin</td>
-  </tr>
-
-  <tr>
-    <td class="col-md-3">July 16, 2022 (Day 14), Saturday</td>
+    <td class="col-md-3">June 22, 2023 (Day 12), Saturday</td>
     <td class="col-md-7">Departure.</td>
     <td class="col-md-2"></td>
   </tr>
-
   
   </table>
 
@@ -341,7 +298,7 @@ The details may vary and the order of topics may be changed, the topics may be o
    2.3. request your advisor to submit a letter of recommendation for you to the following email: "alexeyak AT buffalo DOT edu", 
    please replace "AT" and "DOT" with the corresponding characters
 
-3. Complete the <a href="https://forms.gle/91tpbpe98Q6RHdkv9" target="_blank" rel="nofollow">**Registration form**</a>
+3. Complete the <a href="https://forms.gle/ujaP5cNR7x2AKV1U8" target="_blank" rel="nofollow">**Registration form**</a>
 
 
 ### Important dates
