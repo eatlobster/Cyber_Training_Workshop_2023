@@ -329,7 +329,7 @@ The details may vary and the order of topics may be changed, the topics may be o
 
 ### Important dates
 
-   * Workshop application materials are due 5 pm EDT, May 1, 2023
+   * Workshop application materials are due 5 pm EDT, May 5, 2023
    * Students and Postdocs will be notified of their admission by May 11, 2023
    * Workshop starts: 9 am EDT, June 11, 2023
    * Workshop ends: 5 pm EDT, June 23, 2023
