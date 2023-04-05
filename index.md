@@ -10,11 +10,11 @@ humandate: "June 11-21, 2023"    # human-readable dates for the workshop (e.g., 
 humantime: "9:00 am - 5:00 pm EDT"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2023-06-11      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2023-06-21        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Alexey Akimov", "Graham Worth", "Niri Govind", "Michael Filatov" ]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+instructor: ["Alexey Akimov", "Graham Worth", "Niri Govind", "Michael Filatov", "Micheline Soley" ]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: [ "Qingxin Zhang", "Mohammad Shakiba", "Konstantin Komarov" ] # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["alexeyak@buffalo.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:         # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
-googleform: https://forms.gle/kup1bkWibLsHH8Bn7
+googleform: https://forms.gle/XLwU2DFGbBgBXeto6
 carpentry: "sc"
 ---
 
@@ -64,9 +64,10 @@ nonadiabatic molecular dynamics calculations.
 This year, the focus will be on the following packages:
 
 - Libra (Akimov)
-- Quantics (Worth)
-- NWChem (Govind)
+- Quantics/MCTDH (Worth)
 - GAMESS (Filatov)
+- NWChem (Govind)
+- TT-SOFT, TT-Chebyshev (Soley)
 
 The school will leverage the [OnDemand](https://ondemand.ccr.buffalo.edu) gateway at the University at Buffalo
 
@@ -262,6 +263,10 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 21, 2023 (Day 11), Wednesday</td>
     <td class="col-md-7">
       <ul>
+        <strong>Morning, 9 am - noon</strong>        
+        <li><a href="/_episodes/06-nwchem">Theory and hands on with NWChem</a></li>
+        <strong>Noon - 1:30 pm</strong> Lunch break
+        <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
         <li><a href="/_episodes/06-nwchem">Theory and hands on with NWChem</a></li>
       </ul>
     </td>
@@ -269,11 +274,24 @@ The details may vary and the order of topics may be changed, the topics may be o
   </tr>
 
   <tr>
-    <td class="col-md-3">June 22, 2023 (Day 12), Saturday</td>
+    <td class="col-md-3">June 22, 2023 (Day 12), Thursday</td>
+    <td class="col-md-7">
+      <ul>
+        <strong>Morning, 9 am - noon</strong>        
+        <li><a href="/_episodes/07-ttsoft">Theory of quantum dynamics with TT-SOFT and TT-Chebyshev, IPA optimization.</a></li>
+        <strong>Noon - 1:30 pm</strong> Lunch break
+        <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
+        <li><a href="/_episodes/07-ttsoft">Hands on with TT-SOFT and TT-Chebyshev, IPA optimization.</a></li>
+      </ul>
+    </td>
+    <td class="col-md-2">Micheline Soley</td>
+  </tr>
+
+  <tr>
+    <td class="col-md-3">June 23, 2023 (Day 13), Friday</td>
     <td class="col-md-7">Departure.</td>
     <td class="col-md-2"></td>
-  </tr>
-  
+  </tr>  
   </table>
 
 
@@ -298,14 +316,23 @@ The details may vary and the order of topics may be changed, the topics may be o
    2.3. request your advisor to submit a letter of recommendation for you to the following email: "alexeyak AT buffalo DOT edu", 
    please replace "AT" and "DOT" with the corresponding characters
 
-3. Complete the <a href="https://forms.gle/ujaP5cNR7x2AKV1U8" target="_blank" rel="nofollow">**Registration form**</a>
+3. Complete the <a href="https://forms.gle/XLwU2DFGbBgBXeto6" target="_blank" rel="nofollow">**Registration form**</a>
 
+
+### Important Information about your travel
+
+   * The reasonal travel/meal expenses will be covered by the workshop for the domestic applicants
+   * Travel expenses for a limited number of international applicants can be covered as well
+   * For international applicants: you should be able to enter the US. Visa processing is too lengthy for this planning
+   * You will be provided with lodging in a walking distance from the campus
+   * UB applicants are also eligible to apply, but your expenses can not be covered by the grant supporting this workshop
 
 ### Important dates
+
    * Workshop application materials are due 5 pm EDT, May 1, 2023
    * Students and Postdocs will be notified of their admission by May 11, 2023
    * Workshop starts: 9 am EDT, June 11, 2023
-   * Workshop ends: 5 pm EDT, June 21, 2023
+   * Workshop ends: 5 pm EDT, June 23, 2023
 
 
 ### Who can apply
@@ -328,7 +355,7 @@ are also welcome to participate.
   What is more important is how ready the applicants are to absorb the new knowlege, how efficiently they can operate during the workshop, 
   and how critical the use of the methods/tools covered in the workshop may be for your future research or career (e.g. educating others). 
 
-* **Capacity.** This year, the event will take place in the in-person format. We will accommodate 15+ in-person participants (excluding instructors).  
+* **Capacity.** This year, the event will take place in the in-person format. We will accommodate 20+ in-person participants (excluding instructors).
 
 ### Acknowledgement
 
