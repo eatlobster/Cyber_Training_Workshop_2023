@@ -210,10 +210,11 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-7">
       <ul>
         <strong>Morning, 9 am - noon</strong>        
-        <li><a href="/_episodes/05-gamess">Theory and hands on with GAMESS</a></li>
+        <li><a href="/_episodes/05-gamess">Theory: Introduction in ensemble DFT and basic aspects of REKS method for ground electronic states</a></li>
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
-        <li><a href="/_episodes/05-gamess">Theory and hands on with GAMESS</a></li>        
+        <li><a href="/_episodes/05-gamess">Hands on: REKS implementation in GAMESS-US; 
+        Demos and practical exercises with REKS method for strongly correlated molecular ground states.</a></li>
       </ul>
     </td>
     <td class="col-md-2">Michael Filatov, Konstantin Komarov</td>
@@ -236,10 +237,10 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-7">
       <ul>
         <strong>Morning, 9 am - noon</strong>        
-        <li><a href="/_episodes/05-gamess">Theory and hands on with GAMESS</a></li>
+        <li><a href="/_episodes/05-gamess">Theory: Ensemble DFT for excited states and its implementation in state-averaged REKS methodology</a></li>
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
-        <li><a href="/_episodes/05-gamess">Theory and hands on with GAMESS</a></li>
+        <li><a href="/_episodes/05-gamess">Hands on: Practical exercises with GAMESS-US and NAMD simulations with GAMESS/pyUNI-xMD package</a></li>        
       </ul>
     </td>
     <td class="col-md-2">Michael Filatov, Konstantin Komarov</td>
