@@ -53,7 +53,7 @@ title: "3. Nonadiabatic Dynamics and More with Libra"
 <a name="1.1"></a>
 ### 1.1. Overview and Installation (30 min)
 
-[Slides](../files/Alexey_Akimov/Intro-Setups-Git-Libra-June11.pdf)
+[Slides](../files/Alexey_Akimov/Libra-June12.pdf)
 
 This workshop will involve experience with Python-based software and packages. One that will be used extensively throughut 
 the event is the [Libra](https://github.com/Quantum-Dynamics-Hub/libra-code/tree/devel) package developed by the 
@@ -103,7 +103,7 @@ environment, install all needed dependencies and packages, and build and install
 <a name="2.1"></a>
 ### 2.1. Theoretical Introduction  (120 min)
 
-[Slides](../files/Alexey_Akimov/NAMD_theory-June11-12.pdf)
+[Slides](../files/Alexey_Akimov/NAMD_theory-June12.pdf)
 
 <a name="2.2"></a>
 ### 2.2. NA-MD (TSH and Ehrenfest dynamics) for model Hamiltonians (50 min + 50 min)
@@ -127,7 +127,7 @@ We will be working with these examples:
 <a name="3.1"></a>
 ### 3.1. Overview of the NBRA workflow. step4 (dynamics) within the NBRA settings (30 min)
 
- * [Slides](../files/Alexey_Akimov/NAMD_theory-June11-12.pdf)
+ * [Slides](../files/Alexey_Akimov/NBRA_workflows-June13.pdf)
 
  * [Example](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/2_nbra_workflows/10_generic_step3_4)
 

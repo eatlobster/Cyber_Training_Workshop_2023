@@ -1,36 +1,21 @@
 ---
-title: "2. Revision of Python, Git and GitHub."
+title: "2. Working with Git and GitHub."
 ---
 
 
 <a name="toc"></a>
 # Table of Content
-1. [Python and Best practices](#python)
-2. [Working with Git and GitHub](#github)
-3. [Testing](#testing)
-4. [Documentation](#docs)
+1. [Overview of the workflow](#1)
+2. [Basic commands](#2)
+
+<a name="1"></a>
+## 1. Overview of the workflow
+
+* [Slides](../files/Alexey_Akimov/Git-June12.pdf)
 
 
-
-<a name="python"></a>
-## 1. Python and Best practices
-[Back to TOC](#toc)
-
-  My best referece [is this site](https://www.tutorialspoint.com/python/index.htm)
-
-     https://github.com/compchem-cybertraining/Tutorials_Python
-
-  * [PEP standards, readability and modularity of the codes](https://peps.python.org/pep-0008/)
-  * testing
-  * GitHub (this section)
-
-
-<a name="github"></a>
-## 2. Working with Git and GitHub
-
-<iframe src="https://ub.hosted.panopto.com/Panopto/Pages/Embed.aspx?id=5bab5b19-ca64-4531-ac7b-aec801114d19
-&autoplay=false&offerviewer=true&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" 
-style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+<a name="2"></a>
+## 2. Basic commands
 
   This section can also be found [here](https://akimovlab.github.io/soft_and_tuts/5.6-GIT.html)
 
@@ -38,7 +23,7 @@ style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
  
   And a [more complete documentation](https://git-scm.com/docs)
 
-Below I will summarize the list of most important Git commands. Note that the names in the UPPER CASE have to 
+Below I summarize the list of most important Git commands. Note that the names in the UPPER CASE have to 
 be substituted with the actual names specific to your work. 
 
 
@@ -187,7 +172,6 @@ with the latests updates (commits) on the branch of a local repository you are c
     git push REMOTE-NAME REMOTE-BRANCH
 
 
-
 ### 2.3. Using GIT - practical exercies
 
     git clone https://github.com/<your-account>/Cyber_Training_Workshop_2021.git
@@ -232,52 +216,5 @@ A session with merging and upstream update
     git checkout master 
     git merge my_new_feature
     git push origin master
-
-
-<a name="testing"></a>
-## 3. Testing
-
-  Demonstration of the `unittest` Python library. Examples with real code.
-
-  Distinguishing actualy unittests from the amateur "tests".
-
-  This example includes the demonstration of working with Git/GitHub
-
-
-<a name="docs"></a>
-## 4. Documentation
-
-  Documentation with Sphinx
-
-  * To get ready (on your system, not on CCR)
-
-        conda install sphinx sphinx_rtd_theme 
-
-
-  * Create docs directory
-
-        mkdir docs
-        cd docs
-
-
-  * Initialize Sphinx make and config files
-
-        sphinx-quickstart
-
-
-  * Edit source/conf.py
-
-
-  * Edit the `source` directory with the .rst files. Organize them according to the Python package structure
-    starting from the `index.rst` in the `source` directory (same level as `conf.py`). This is the top-level 
-    file for future docs, the prototype of the index.html
-
-  * Compile the docs
-
-        make html
-
-  * Check out the results in the `build` folder just created
-
-
 
 
