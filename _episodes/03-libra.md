@@ -7,14 +7,22 @@ title: "3. Nonadiabatic Dynamics and More with Libra"
 1. [General overview and Installation]](#1)
 2. [Theoretical Background](#2)
 3. [Tutorials](#3)
-  3.1. [Getting Started](#3.1)
-  3.2. [General-purpose capabilities](#3.2)
-  3.3. [NA-MD (TSH and Ehrenfest dynamics) for model Hamiltonians](#3.3)
-  3.4. [NA-MD (TSH) for atomistic systems](#3.4)
-  3.5. [Wavepackets and Quantum Trajectories with Adaptive Gaussians (QTAG)](#3.5)
-  3.6. [Exact dynamics via SOFT-DVR](#3.6)
-  3.7. [Hierarchical Equations of Motion (HEOM)](#3.7)
-  3.8. [Auxiliary methods for computational chemistry codes](#3.8)
+
+    3.1. [Getting Started](#3.1)
+
+    3.2. [General-purpose capabilities](#3.2)
+
+    3.3. [NA-MD (TSH and Ehrenfest dynamics) for model Hamiltonians](#3.3)
+
+    3.4. [NA-MD (TSH) for atomistic systems](#3.4)
+  
+    3.5. [Wavepackets and Quantum Trajectories with Adaptive Gaussians (QTAG)](#3.5)
+
+    3.6. [Exact dynamics via SOFT-DVR](#3.6)
+  
+    3.7. [Hierarchical Equations of Motion (HEOM)](#3.7)
+
+    3.8. [Auxiliary methods for computational chemistry codes](#3.8)
 
 
 <a name="1"></a>
@@ -91,7 +99,6 @@ environment, install all needed dependencies and packages, and build and install
 
 
 ### 3.3. NA-MD (TSH and Ehrenfest dynamics) for model Hamiltonians
-
 
   * [namd_workflow, scattering calculations](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/6_dynamics/1_trajectory_based/8_model_nonadiabatic/tutorial.ipynb)
   * [lower level functions, adiabatic, Ehrensfest, and TSH calculations](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/6_dynamics/1_trajectory_based/2_model_adiabatic_ehrenfest_fssh/tutorial.ipynb)

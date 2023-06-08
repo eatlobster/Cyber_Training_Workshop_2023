@@ -47,7 +47,8 @@ title: "Projects and Participants"
 | 18 | Paul Javed | GRA-1 | Kansas State University | USA | Christine Aikens | in-person | TBD |
 | 19 | Qingxin Zhang | GRA-1 | University at Buffalo | USA | Alexey Akimov | in-person | TBD |
 | 20 | Suchona Akter | GRA-1 | University of Missouri-Kansas City | USA | Mohammad Momeni | in-person | TBD |
-| 21 | Hamid Zabihi Hashjin | GRA-4 | Shahid Bahonar University of Kerman | Iran | Gholam Reza Khayati | in-person | TBD |
+| 21 | Hamid Zabihi Hashjin | GRA-4 | Shahid Bahonar University of Kerman | Iran | Gholam Reza Khayati | remote/virtual | TBD |
+| 22 | Kosar Yasin | GRA-1 | University at Buffalo | USA | Alexey Akimov | in-person | TBD |
 
 
 Notes:

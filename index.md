@@ -10,8 +10,8 @@ humandate: "June 11-23, 2023"    # human-readable dates for the workshop (e.g., 
 humantime: "9:00 am - 5:00 pm EDT"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2023-06-11      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2023-06-23        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Alexey Akimov", "Graham Worth", "Niri Govind", "Michael Filatov", "Micheline Soley" ]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: [ "Qingxin Zhang", "Mohammad Shakiba", "Konstantin Komarov" ] # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Alexey Akimov", "Graham Worth", "Michael Filatov", "Niri Govind", "Daniel Mejia Rodriguez", "Micheline Soley" ]  # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: [ "Qingxin Zhang", "Mohammad Shakiba", "Eryn Spinlove", "Konstantin Komarov", "Edoardo Apra" ] # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["alexeyak@buffalo.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:         # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 googleform: https://forms.gle/XLwU2DFGbBgBXeto6
@@ -148,14 +148,14 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-7">
       <ul>
         <strong>Morning, 9 am - noon</strong>        
-        <li><a href="/_episodes/01-introduction">Introduction. Overview of the CCR CyberInfrastructure and auxiliary software (30 min)</a></li>
-        <li><a href="/_episodes/02-python-git">Working with Git and GitHub. Theory and Hands on (90 min)</a> </li>
-        <li><a href="/_episodes/03-libra">General overview of Libra. Demos on various auxiliary capabilities and simple hands ons (60 min)</a></li>
+        <li><a href="/_episodes/01-introduction">Worshop Kick Off: goals, logistics, details. Overview of the CCR CyberInfrastructure (30 min)</a></li>
+        <li><a href="/_episodes/02-python-git">Working with Git and GitHub. Theory and Hands on (60 min)</a> </li>
+        <li><a href="/_episodes/03-libra">General overview of Libra software (Lecture and Demo/Hands on)(90 min)</a></li>
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
-        <li><a href="/_episodes/03-libra">Theory of adiabatic and nonadiabatic dynamics. Lecture (90 min)</a></li>
+        <li><a href="/_episodes/03-libra">Theory of adiabatic and nonadiabatic dynamics. Lecture (60 min)</a></li>
         <li><a href="/_episodes/03-libra">TSH and Ehrenfest dynamics with model Hamiltonians in Libra. Hands on (90 min)</a></li>
-        <li><a href="/_episodes/03-libra">HEOM and QTAG in Libra. (30 min)</a></li>
+        <li><a href="/_episodes/03-libra">HEOM and QTAG in Libra. (60 min)</a></li>
       </ul>
     </td> 
     <td class="col-md-2">Alexey Akimov, Qingxin Zhang, Mohammad Shakiba</td>
@@ -188,7 +188,7 @@ The details may vary and the order of topics may be changed, the topics may be o
         <li><a href="/_episodes/04-quantics">Theory and hands on with Quantics and MCTDH</a></li>
       </ul>
     </td>
-    <td class="col-md-2">Graham Worth</td>
+    <td class="col-md-2">Graham Worth, Eryn Spinlove</td>
   </tr>
 
   <tr>
@@ -202,7 +202,7 @@ The details may vary and the order of topics may be changed, the topics may be o
         <li><a href="/_episodes/04-quantics">Theory and hands on with Quantics and MCTDH</a></li>
       </ul>
     </td>
-    <td class="col-md-2">Graham Worth</td>
+    <td class="col-md-2">Graham Worth, Eryn Spinlove</td>
   </tr>
 
   <tr>
@@ -257,7 +257,7 @@ The details may vary and the order of topics may be changed, the topics may be o
         <li><a href="/_episodes/06-nwchem">Theory and hands on with NWChem</a></li>
       </ul>
     </td>
-    <td class="col-md-2">Niri Govind</td>
+    <td class="col-md-2">Daniel Mejia Rodriguez, Edoardo Apra, Niri Govind</td>
   </tr>
 
   <tr>
@@ -271,7 +271,7 @@ The details may vary and the order of topics may be changed, the topics may be o
         <li><a href="/_episodes/06-nwchem">Theory and hands on with NWChem</a></li>
       </ul>
     </td>
-    <td class="col-md-2">Niri Govind</td>
+    <td class="col-md-2">Daniel Mejia Rodriguez, Edoardo Apra, Niri Govind</td>
   </tr>
 
   <tr>
