@@ -150,12 +150,13 @@ The details may vary and the order of topics may be changed, the topics may be o
         <strong>Morning, 9 am - noon</strong>        
         <li><a href="/_episodes/01-introduction">Worshop Kick Off: goals, logistics, details. Overview of the CCR CyberInfrastructure (30 min)</a></li>
         <li><a href="/_episodes/02-python-git">Working with Git and GitHub. Theory and Hands on (60 min)</a> </li>
-        <li><a href="/_episodes/03-libra">General overview of Libra software (Lecture and Demo/Hands on)(90 min)</a></li>
+        <li><a href="/_episodes/03-libra">General overview of Libra software (Lecture)(30 min)</a></li>
+        <li><a href="/_episodes/03-libra">General overview of Libra software (Hands on)(60 min)</a></li>
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
-        <li><a href="/_episodes/03-libra">Theory of adiabatic and nonadiabatic dynamics. Lecture (60 min)</a></li>
-        <li><a href="/_episodes/03-libra">TSH and Ehrenfest dynamics with model Hamiltonians in Libra. Hands on (90 min)</a></li>
-        <li><a href="/_episodes/03-libra">HEOM and QTAG in Libra. (60 min)</a></li>
+        <li><a href="/_episodes/03-libra">Theory of adiabatic and nonadiabatic dynamics. Lecture (120 min)</a></li>
+        <li><a href="/_episodes/03-libra">TSH and Ehrenfest dynamics with model Hamiltonians in Libra. Hands on (50 min)</a></li>
+        <li><a href="/_episodes/03-libra">TSH and Ehrenfest dynamics with model Hamiltonians in Libra. Hands on (50 min)</a></li>
       </ul>
     </td> 
     <td class="col-md-2">Alexey Akimov, Qingxin Zhang, Mohammad Shakiba</td>
@@ -165,10 +166,12 @@ The details may vary and the order of topics may be changed, the topics may be o
     <td class="col-md-3">June 13, 2023 (Day 3), Tuesday</td>
     <td class="col-md-7">
       <ul>
-        <strong>Morning, 9 am - noon</strong>        
-        <li><a href="/_episodes/03-libra">Machine learning capabilities of Libra: Lecture, Demo, and Hands on  (60 min)</a></li>
-        <li><a href="/_episodes/03-libra">DVR in Libra. Lecture, Demo, and Hands on (90 min)</a></li>
-        <li><a href="/_episodes/03-libra">TBD (30 min)</a></li>
+        <strong>Morning, 9 am - noon</strong>
+        <li><a href="/_episodes/03-libra">Overview of the NBRA workflow. step4 (dynamics) within the NBRA settings. Lecture/HandsOn  (30 min)</a></li>
+        <li><a href="/_episodes/03-libra">Computing NACs in the MO basis with DFTB+ (30 min)</a></li>
+        <li><a href="/_episodes/03-libra">Mapping single-particle properties to the Slater-determinants picture (30 min)</a></li>
+        <li><a href="/_episodes/03-libra">Complete example with DFTB+ (60 min)</a></li>
+        <li><a href="/_episodes/03-libra">Interfacing Libra with external codes (30 min)</a></li>
         <strong>Noon - 1:30 pm</strong> Lunch break
         <strong>Afternoon, 1:30 pm - 5:00 pm</strong>
         <li><a href="/_episodes/03-libra">NA-MD in finite and condensed matter systems with xTB and TD-DFT with Libra/CP2k code. Lecture and Hands on</a></li>

@@ -4,32 +4,56 @@ title: "3. Nonadiabatic Dynamics and More with Libra"
 
 <a name="toc"></a>
 # Table of Content
-1. [General overview and Installation]](#1)
-2. [Theoretical Background](#2)
-3. [Tutorials](#3)
+1. [General overview of Libra](#1) - **June 12, morning**
 
-    3.1. [Getting Started](#3.1)
+    1.1. [Overview and Installation](#1.1)
 
-    3.2. [General-purpose capabilities](#3.2)
+    1.2. [Demonstrations](#1.2)
 
-    3.3. [NA-MD (TSH and Ehrenfest dynamics) for model Hamiltonians](#3.3)
+    1.3. [Videorecording of the session](#1.3)
 
-    3.4. [NA-MD (TSH) for atomistic systems](#3.4)
+2. [Theory and Practice of NA-MD with Libra](#2)  **June 12, afternoon**
+
+    2.1. [Theoretical Introduction](#2.1)
+
+    2.2. [NA-MD (TSH and Ehrenfest dynamics) for model Hamiltonians](#2.2)
+
+    2.3. [Videorecording of the session](#2.3)
+
+3. [NA-MD for atomistic systems](#3) **June 13, morning**
+
+    3.1. [Overview of the NBRA workflow. step4 (dynamics) within the NBRA settings](#3.1)
+
+    3.2. [Computing NACs in the MO basis with DFTB+](#3.2)
+
+    3.3. [Mapping single-particle properties to the Slater-determinants picture](#3.3)
+
+    3.4. [Complete example with DFTB+](#3.4)
+
+    3.5. [Interfacing Libra with external codes](#3.5)
+
+    3.6. [Videorecording of the session](#3.6)
+
+4. [NA-MD for atomistic systems](#4) **June 13, afternoon**
+
+5. [Additional material, in case we'll have extra time]
+
+    5.1. [Exact dynamics via SOFT-DVR](#5.1)
   
-    3.5. [Wavepackets and Quantum Trajectories with Adaptive Gaussians (QTAG)](#3.5)
+    5.2. [Hierarchical Equations of Motion (HEOM)](#5.2)
 
-    3.6. [Exact dynamics via SOFT-DVR](#3.6)
-  
-    3.7. [Hierarchical Equations of Motion (HEOM)](#3.7)
-
-    3.8. [Auxiliary methods for computational chemistry codes](#3.8)
+    5.3. [Wavepackets and Quantum Trajectories with Adaptive Gaussians (QTAG)](#5.3)
 
 
-<a name="1"></a>
+
+<a name="1"></a>[Back to TOC](#toc)
 ## 1. General overview of Libra. 
-[Back to TOC](#toc)
 
-### 1.1. Overview and Installation
+
+<a name="1.1"></a>
+### 1.1. Overview and Installation (30 min)
+
+[Slides](../files/Alexey_Akimov/Intro-Setups-Git-Libra-June11.pdf)
 
 This workshop will involve experience with Python-based software and packages. One that will be used extensively throughut 
 the event is the [Libra](https://github.com/Quantum-Dynamics-Hub/libra-code/tree/devel) package developed by the 
@@ -45,46 +69,14 @@ participant (the participant without full access to UB CCR resources, which may 
 Please follow the [installation instructions](https://github.com/Quantum-Dynamics-Hub/libra-code/tree/devel) to build the corresponding 
 environment, install all needed dependencies and packages, and build and install the Libra code itself. **Make sure to use the "devel" branch**. 
 
-
-### 1.2. Slides 
-
-  To be Added
-
-  * [From summer 2022](../files/Alexey_Akimov/July5-morning.pdf)
-
-
-### 1.3. Videorecording of the session
-
-  To be Added 
-
-
-## 2. Theoretical Background
-[Back to TOC](#toc)
-
-### 2.1. Slides
-
-  To be Added
-
-### 2.2. Videorecording of the session
-
-  To be added 
-
-
-
-<a name="3"></a>
-## 3. Tutorials
-[Back to TOC](#toc)
-
-<a name="3.1"></a>
-### 3.1. Getting Started
+<a name="1.2"></a>
+### 1.2. Demonstrations (60 min)
 
   To start - clone thetutorials repository into your working directory
 
       git clone https://github.com/compchem-cybertraining/Tutorials_Libra.git
 
-
-<a name="3.2"></a>
-### 3.2. General-purpose capabilities
+  Then let's explore these tutorials
 
   * [Basic algebra](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/3_linear_algebra/1_vector_matrix_cmatrix_basics/tutorial.ipynb)
   * [Matrix decompositions](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/3_linear_algebra/2_matrix_functions/tutorial.ipynb)
@@ -96,44 +88,101 @@ environment, install all needed dependencies and packages, and build and install
   * [ML Basics](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/9_machine_learning/1_basics_of_mlp/tutorial.ipynb)
   * [ML Derivatives](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/9_machine_learning/2_ann_derivatives/tutorial.ipynb)
   * [ML Advanced](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/9_machine_learning/3_advanced_ann/tutorial.ipynb)
+  * [CP2K input preparation]()
 
 
-### 3.3. NA-MD (TSH and Ehrenfest dynamics) for model Hamiltonians
+<a name="1.3"></a>
+### 1.3. Videorecording of the session
 
-  * [namd_workflow, scattering calculations](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/6_dynamics/1_trajectory_based/8_model_nonadiabatic/tutorial.ipynb)
-  * [lower level functions, adiabatic, Ehrensfest, and TSH calculations](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/6_dynamics/1_trajectory_based/2_model_adiabatic_ehrenfest_fssh/tutorial.ipynb)
-
-
-### 3.4. NA-MD (TSH) for atomistic systems
-
-  * [Slides from the summer 2022 workshop](../files/Mohammad_Shakiba/July5-morning.pdf)
-  * [Step 1, cp2k/DFT](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/6_dynamics/2_nbra_workflows/6_step1_cp2k/1_DFT/1_example_TiO2/tutorial.ipynb)
-  * [Step 2, cp2k/DFT](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/6_dynamics/2_nbra_workflows/7_step2_cp2k/1_DFT/2_hpc/1_example_TiO2/tutorial.ipynb)
-  * [Step 3, cp2k/DFT](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/6_dynamics/2_nbra_workflows/8_step3_cp2k/1_DFT/tutorial.ipynb)
-  * [Step 4, cp2k/DFT](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/6_dynamics/2_nbra_workflows/9_step4_cp2k/tutorial.ipynb)
-  * [Interfaces with other codes](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/8_model_hamiltonians/2_interfaces_with_qchem_codes/tutorial.ipynb)
-
-    For the DFTB+ part, make sure to download the parameters files and change kernel to libra-latest
-
-  * [DFTB+, command-line example](https://github.com/compchem-cybertraining/Tutorials_DFTB_plus)
-
-    Make sure to download the parameters files and change kernel to `libra-latest`
-
-  * [QE, Jupyter demonstration](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/2_nbra_workflows/1_step1_qe/tutorial.ipynb)
-
-    Make sure to download the PP files and change kernel to `libra-latest`
-
-  * [QE, Jupyter demonstration](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/2_nbra_workflows/3_step2_qe/tutorial.ipynb)
-
-    Make sure to download the PP files and change kernel to `libra-latest`
-    Make sure to use the absolute path for the pseudopotential dir
-
-  * [QE, command-line and Jupyter examples](https://github.com/compchem-cybertraining/Tutorials_QE_and_eQE/tree/master/7_eqe_nacs)
-
-    Show the NAC calculcations with eQE
+  To be Added 
 
 
-### 3.5. Wavepackets and Quantum Trajectories with Adaptive Gaussians (QTAG)
+<a name="2"></a>[Back to TOC](#toc)
+## 2. Theory and Practice of NA-MD with Libra
+
+<a name="2.1"></a>
+### 2.1. Theoretical Introduction  (120 min)
+
+[Slides](../files/Alexey_Akimov/NAMD_theory-June11-12.pdf)
+
+<a name="2.2"></a>
+### 2.2. NA-MD (TSH and Ehrenfest dynamics) for model Hamiltonians (50 min + 50 min)
+
+We will be working with these examples:
+
+ * [Model Hamiltonians in Libra](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/8_model_hamiltonians/3_models/tutorial.ipynb)
+ * [Running NA-MD with model Hamiltonians](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/6_dynamics/1_trajectory_based/9_model_revised/tutorial.ipynb)
+ * [Various methods in Libra](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/1_trajectory_based/10_model_many_methods)
+ 
+
+<a name="2.3"></a>
+### 2.3. Videorecording of the session
+
+  To be added 
+
+
+<a name="3"></a>[Back to TOC](#toc)
+## 3. NA-MD for atomistic systems, June 13, morning (Alexey Akimov)
+
+<a name="3.1"></a>
+### 3.1. Overview of the NBRA workflow. step4 (dynamics) within the NBRA settings (30 min)
+
+ * [Slides](../files/Alexey_Akimov/NAMD_theory-June11-12.pdf)
+
+ * [Example](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/2_nbra_workflows/10_generic_step3_4)
+
+<a name="3.2"></a>
+### 3.2. Computing NACs in the MO basis with DFTB+  (30 min)
+
+ * [Computing NACs](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/2_nbra_workflows/11_step2_dftb)
+
+<a name="3.3"></a>
+### 3.3. Mapping single-particle properties to the Slater-determinants picture (30 min)
+
+ * [Mapping example](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/2_nbra_workflows/12_generic_mapping)
+
+<a name="3.4"></a>
+### 3.4. Complete example with DFTB+ (60 min)
+
+ * [Complete example](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/2_nbra_workflows/13_complete_example)
+
+<a name="3.5"></a>
+### 3.5. Interfacing Libra with external codes (30 min)
+
+ * [Interfaces with other codes](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/8_model_hamiltonians/2_interfaces_with_qchem_codes/tutorial.ipynb)
+
+<a name="3.6"></a>
+### 3.6. Videorecording of the session
+
+  To be added 
+
+
+<a name="4"></a>[Back to TOC](#toc)
+## 4. NA-MD for atomistic systems, June 13, afternoon (Mohammad Shakiba)
+
+ To be added 
+
+
+
+<a name="5"></a>
+## 5. Additional material, in case we'll have extra time
+[Back to TOC](#toc)
+
+<a name="5.1"></a>
+### 5.1. Exact dynamics via SOFT-DVR
+
+  * [3_soft_propagation/tutorial](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/3_soft_propagation/tutorial.ipynb)
+
+   the wrapped up SOFT simulation and cool visualization
+
+<a name="5.2"></a>
+### 5.2. Hierarchical Equations of Motion (HEOM)
+
+  * [HEOM tutorial](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/3_heom/1_dynamics_and_lineshapes/tutorial.ipynb)
+
+
+<a name="5.3"></a>
+### 5.3 Wavepackets and Quantum Trajectories with Adaptive Gaussians (QTAG)
 
   * [1_gaussian/1_matrix_elements](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/1_gaussian/1_matrix_elements/tutorial.ipynb)
    
@@ -143,22 +192,5 @@ environment, install all needed dependencies and packages, and build and install
    and [4_more/Tutorial1](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/4_more)
 
   * [QTAG basics](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/6_dynamics/5_qtag/1_basics/tutorial.ipynb)
-
-
-### 3.6. Exact dynamics via SOFT-DVR
-
-  * [3_soft_propagation/tutorial](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/4_wavepackets/3_soft_propagation/tutorial.ipynb)
-
-   the wrapped up SOFT simulation and cool visualization
-
-
-### 3.7. Hierarchical Equations of Motion (HEOM)
-
-  * [HEOM tutorial](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/6_dynamics/3_heom/1_dynamics_and_lineshapes/tutorial.ipynb)
-
-
-### 3.8. Auxiliary methods for computational chemistry codes
-
-  To be Added 
 
    
