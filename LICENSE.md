@@ -9,7 +9,7 @@ root: .
 | Software | Links |
 |----------|-------|
 | Libra | [Website (Code and Installation)](https://github.com/Quantum-Dynamics-Hub/libra-code/tree/devel) | [Website (general description, tutorials, old installation)](https://quantum-dynamics-hub.github.io/libra/index.html) |   [Tutorials](https://github.com/compchem-cybertraining/Tutorials_Libra) |
-| NWChem | [Website](https://www.nwchem-sw.org/) |
+| NWChem | [Website](https://nwchemgit.github.io ) |
 | GAMESS-US | [Website](https://www.msg.chem.iastate.edu/gamess/) |
 | Quantics and MCTDH | [Website](http://www.chem.ucl.ac.uk/quantics/)  |
 
@@ -32,8 +32,9 @@ root: .
 
 | Name            | Affiliation         |    Role/Software covered   |
 | --------------- | ------------------- | -------------------------- |
-| Mr. Qingxin Zhang   |  University at Buffalo, US   | Co-instructor for: **Libra, pyUNIxMD** |
-| Mr. Mohammad Shakiba   |  University at Buffalo, US   | Co-instructor for: **Libra, CP2K** |
+| Dr. Eryn Spinlove | University College London, UK | Co-instructor for: Quantics, MCTDH |
+| Mr. Qingxin Zhang   |  University at Buffalo, US | Co-instructor for: **Libra, pyUNIxMD** |
+| Mr. Mohammad Shakiba   |  University at Buffalo, US | Co-instructor for: **Libra, CP2K** |
 | Dr. Konstantin Komarov | Pohang University of Science and Technology, South Korea | Co-instructor for: **GAMESS-US, pyUNIxMD** |
 | Ms. Elizabeth Stippel | University of Southern California | Co-instructor for: **Pysces** |
 
