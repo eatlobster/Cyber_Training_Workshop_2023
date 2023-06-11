@@ -80,15 +80,14 @@ environment, install all needed dependencies and packages, and build and install
 
   * [Basic algebra](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/3_linear_algebra/1_vector_matrix_cmatrix_basics/tutorial.ipynb)
   * [Matrix decompositions](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/3_linear_algebra/2_matrix_functions/tutorial.ipynb)
-  * [Statistics](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/7_special_functions/4_random_numbers/1_basics/tutorial.ipynb)
   * [Metropolis](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/7_special_functions/4_random_numbers/2_metropolis/tutorial.ipynb)
+  * [Gaussian Kernel Algorithm](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/7_special_functions/2_gaussian_kernel_algorithm/tutorial.ipynb)
   * [Runge-Kutta for classical MD](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/2_integrators/1_runge_kutta_4th_order/tutorial.ipynb)
   * [Runge-Kutta for Liouville Eq](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/2_integrators/2_runge_kutta_4_for_Liouville/tutorial.ipynb)
-  * [Program-specific utility functions](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/11_program_specific_methods/2_qe_methods)
   * [ML Basics](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/9_machine_learning/1_basics_of_mlp/tutorial.ipynb)
   * [ML Derivatives](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/9_machine_learning/2_ann_derivatives/tutorial.ipynb)
-  * [ML Advanced](https://github.com/compchem-cybertraining/Tutorials_Libra/blob/master/9_machine_learning/3_advanced_ann/tutorial.ipynb)
-  * [CP2K input preparation]()
+  * [CP2K input preparation](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/11_program_specific_methods/3_cp2k_methods/1_input_generator/tutorial.ipynb)
+  * [QE: pdos, statistics, normal modes](https://github.com/compchem-cybertraining/Tutorials_Libra/tree/master/11_program_specific_methods/2_qe_methods)
 
 
 <a name="1.3"></a>
